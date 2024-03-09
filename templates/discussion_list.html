@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{ url_for('static', filename='/css/style.css') }}">
+    <title>Discussion History</title>
+</head>
+<body>
+    <h1>Discussion History</h1>
+    <ul>
+        {% for key, discussion in discussions.items() %}
+            <li>
+                {{ discussion }}
+                <form action="/delete" method="post" style="display: inline;" >
+                    <input type="hidden" name="key" value="{{0,key}}">
+                    <input type="submit" value="Delete">
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="center_buttom2">
+        <button onclick="location.href='/'" class="button2">Go back</button>
+    </div>
+</body>
+</html>
