@@ -1,4 +1,4 @@
-# Flask-OpenAI-Chatbot
+# Chatbot Using OpenAI + Flask 
 An application built with Flask, featuring a chatbot empowered by OpenAI's GPT-3.5 Turbo, capable of mimicking various characters. Users can engage with distinct personas, each characterized by their own backgrounds and personalities. Furthermore, it boasts an intuitive chatbot interface crafted in HTML for user convenience
 
 
